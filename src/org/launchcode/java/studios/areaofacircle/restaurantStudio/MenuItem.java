@@ -59,7 +59,7 @@ public class MenuItem {
             return false;
         }
         if(itemToCompare.getClass() !=getClass()) {
-            return false
+            return false;
         }
         MenuItem theItem = (MenuItem) itemToCompare;
         return theItem.getDescription()==getDescription();
