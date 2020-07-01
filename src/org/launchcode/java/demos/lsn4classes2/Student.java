@@ -44,6 +44,7 @@ public class Student {
         else if (numberOfCredits > 90) {
             return "Senior";
         }
+        return "hi";
     }
 
     // TODO: Complete the addGrade method.
