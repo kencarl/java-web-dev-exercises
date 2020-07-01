@@ -43,4 +43,25 @@ public class MenuItem {
     public boolean getIsNew () {
         return isNew;
     }
+
+    public String isMenuItemNew(){
+        if (this.isNew) {
+            return ("NEW");
+        } else {
+            return ("");
+        }
+    }
+    public boolean isEqual(MenuItem itemToCompare){
+        if (itemToCompare == this){
+            return true;
+        }
+        if(itemToCompare == null){
+            return false;
+        }
+        if(itemToCompare.getClass() !=getClass()) {
+            return false
+        }
+        MenuItem theItem = (MenuItem) itemToCompare;
+        return theItem.getDescription()==getDescription();
+    }
 }
